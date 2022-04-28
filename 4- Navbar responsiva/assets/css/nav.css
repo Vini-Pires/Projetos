@@ -1,0 +1,37 @@
+.cabecalho {
+    background: whitesmoke;
+}
+
+.cabecalho__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    font-size: 2.5rem;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav__burger {
+    background: none;
+    border: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.nav__burger input:checked ~ span {
+    background: red;
+}
+
+.burger {
+    height: 5px;
+    width: 30px;
+    background: #000;
+    border-radius: 12.5px;
+    margin: 2.5px 0;
+}
+

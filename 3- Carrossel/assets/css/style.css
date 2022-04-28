@@ -1,0 +1,112 @@
+.carousel {
+  align-items: center;
+  background: whitesmoke;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.carousel__imgs {
+  height: 60%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.carousel__prev, .carousel__next{
+  background: none;
+  border: none;
+}
+
+.carousel__prev > div, .carousel__next > div {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: solid 1px black;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.prev__arrow > .square {
+  transform: rotate(calc(180deg + 45deg));
+  position: relative;
+  left: 10px;
+}
+
+.square {
+  transform: rotate(45deg);
+  position: relative;
+  left: 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  border: solid black;
+  border-bottom: 2px;
+  border-left: 2px;
+}
+
+.carousel__next {
+  order: 1;
+}
+
+.carousel__img{ /* Definir o responsivo*/
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.carousel__img > div{
+  visibility: hidden;
+}
+
+.carousel__img > .active {
+  border: solid 1px black;
+  border-radius: 10px;
+  height: 100%;
+  visibility: visible;
+  width: 100%;
+}
+
+.carousel__img > div:nth-child(1) {
+  background: url(../img/Screenshot_20220414-170628_WhatsAppBusiness_2.jpg);
+  background-size: cover;
+}
+.carousel__img > div:nth-child(2) {
+  background: url(../img/Screenshot_20220414-170636_WhatsAppBusiness_2.jpg);
+  background-size: cover;
+}
+.carousel__img > div:nth-child(3) {
+  background: url(../img/Screenshot_20220414-170641_WhatsAppBusiness_2.jpg);
+  background-size: cover;
+}
+
+.carousel__btn {
+  align-items: center;
+  display: flex;
+  margin-top: .5rem;
+  justify-content: center;
+  width: 60%;
+}
+
+.carousel__btn > button {
+  background: #7e7e7e;
+  border: none;
+  border-radius: 100%;
+  box-shadow: #7e7e7e 1px 1px 3px;
+  height: 1.5rem;
+  margin: 0 .5rem;
+  width: 1.5rem;
+}
+
+.carousel__btn > .active {
+  background: #3d3dd4;
+  box-shadow: #3535be 2px 2px 5px;
+}

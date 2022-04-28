@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <title>Nav Bar</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__nav">
+            <a href="#" class="nav__link">Pizzaria</a>
+            <button class="nav__burger" onclick="toggleCheck(checkBox)">
+                <input type="checkbox" id="input__burger" hidden>
+                <span class="burger"></span>
+                <span class="burger"></span>
+                <span class="burger"></span>
+            </button>
+
+
+            <ul class="nav__lista" hidden>
+                <a href="" class="nav__link">
+                    <li class="nav__item">Menu</li>
+                </a>
+                <a href="" class="nav__link">
+                    <li class="nav__item">Preços</li>
+                </a>
+                <a href="" class="nav__link">
+                    <li class="nav__item">Sobre nós</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+</body>
+<script src="./main.js"></script>
+</html>

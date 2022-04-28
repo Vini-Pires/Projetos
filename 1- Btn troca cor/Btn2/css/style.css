@@ -1,0 +1,38 @@
+html {
+  background: #7171f3;
+}
+
+[dark-mode] {
+  background: #2d2d8a;
+}  
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  width: 5rem;
+  height: 2.5rem;
+  background: #000;
+  padding: .6rem;
+  border-radius:  12.5rem 12.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.button-move {
+  justify-content: flex-end;
+}
+
+.dot {
+  height: 90%;
+  width: 45%;
+  border-radius: 50%;
+  background: rgb(180, 130, 130);
+
+  animation: move 2s ease-in-out;
+}

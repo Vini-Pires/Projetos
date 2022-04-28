@@ -1,0 +1,30 @@
+.conjunto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  height: 100vh;
+}
+
+.quadrado {
+  height: 5rem;
+  width: 5rem;
+  border: 2px solid black;
+  order: 1;
+}
+
+.vermelho {
+  background: red;
+}
+
+.azul {
+  background: blue;
+}
+
+.verde {
+  background: green;
+}
+
+.rosa {
+  background: #ea00ff;
+}
