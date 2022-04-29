@@ -1,18 +1,24 @@
 .cabecalho {
-    background: whitesmoke;
+    background: var(--bg-header);
 }
 
 .cabecalho__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem;
-    font-size: 2.5rem;
+    padding: var(--padd-header);
+    font-size: var(--font-sz-header);
 }
 
 .nav__link {
     text-decoration: none;
     color: black;
+}
+
+.nav__responsivo {
+    display: flex;
+    flex-flow: column;
+    height: var(--font-sz-header);
 }
 
 .nav__burger {
@@ -35,3 +41,15 @@
     margin: 2.5px 0;
 }
 
+.nav__lista {
+    position: absolute;
+    right: 0;
+    top: calc(var(--font-sz-header) + (var(--padd-header)*2));
+    height: calc(100vh - (var(--font-sz-header) + (var(--padd-header)*2))); 
+    background: var(--nav-header);
+    padding: 0 1rem;
+}
+
+.nav__item{
+    padding: 1rem;
+}
