@@ -1,12 +1,14 @@
-const checkBox = document.querySelector('#input__burger')
+const checkBox = document.querySelector('[data-burger]')
+const navList = document.querySelector('[data-list]')
 
-console.log(checkBox);
 
 const toggleCheck = (el) => {
     if (el.checked) {
         el.checked = false
+        navList.toggleAttribute('hidden')
     } else {
         el.checked = true
+        navList.toggleAttribute('hidden')
     }
 }
 
