@@ -1,6 +1,6 @@
 :root {
-    --font-sz-header: 2.5rem;
-    --padd-header: 2.5rem;
     --bg-header: #f5f5f5;
+    --font-sz-header: 2.5rem;
     --nav-header: #f1f1f1;
+    --padd-header: 2.5rem;
 }
